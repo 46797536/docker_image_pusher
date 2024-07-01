@@ -1,6 +1,6 @@
-alpine
-python:alpine3.19
-kasmweb/nginx:1.25.3
---platform linux/arm64 cooderl/wewe-rss-sqlite:latest
-busybox
-
+#alpine
+#python:alpine3.19
+#kasmweb/nginx:1.25.3
+#--platform linux/arm64 cooderl/wewe-rss-sqlite:latest
+#busybox
+labring/kubernetes-docker:v1.24.13-arm64
