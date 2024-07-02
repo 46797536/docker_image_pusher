@@ -24,10 +24,10 @@ jobs:
         curl -LO https://github.com/labring/sealos/releases/download/v4.3.3/sealos_4.3.3_linux_amd64.tar.gz
         tar -xzvf sealos_4.3.3_linux_amd64.tar.gz
         chmod +x sealos
-        #mv sealos  /usr/bin
+        mv sealos  /usr/local/bin
         #echo "$PWD/sealos" >> $GITHUB_PATH
-        echo "$PWD/sealos" >> $PATH
-        echo $PATH
+        #echo "$PWD/sealos" >> $PATH
+        #echo "$PATH"
         
     - name: Verify sealos installation
       run: sealos version  # 或者任何其他命令来验证sealos是否正确安装
