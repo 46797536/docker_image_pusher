@@ -26,6 +26,7 @@ jobs:
         chmod +x sealos
         mv sealos  /usr/bin
         #echo "$PWD/sealos" >> $GITHUB_PATH
+        echo $PATH
         
     - name: Verify sealos installation
       run: sealos version  # 或者任何其他命令来验证sealos是否正确安装
