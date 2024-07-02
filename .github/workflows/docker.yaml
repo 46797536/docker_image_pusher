@@ -18,15 +18,7 @@ jobs:
     name: Pull
     runs-on: ubuntu-latest
     steps:
-    - name: Setup sealos
-      run: |
-        set -e
-        curl -LO https://github.com/labring/sealos/releases/download/v4.3.3/sealos_4.3.3_linux_amd64.tar.gz
-        tar -xzvf sealos_4.3.3_linux_amd64.tar.gz
-        chmod +x sealos
-        echo "$PWD/sealos" >> $GITHUB_PATH
-        cat  $GITHUB_PATH
-        ls $PWD/sealos
+
 
     - name: Check out code
       uses: actions/checkout@v2
@@ -34,6 +26,11 @@ jobs:
     - name: Build and push image Aliyun
       run: |
         set -e
+        curl -LO https://github.com/labring/sealos/releases/download/v4.3.3/sealos_4.3.3_linux_amd64.tar.gz
+        tar -xzvf sealos_4.3.3_linux_amd64.tar.gz
+        chmod +x sealos
+        alias sealos="$PWD/sealos"
+        
         sealos login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         while IFS= read -r line; do
           [[ -z "$line" ]] && continue
