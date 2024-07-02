@@ -24,11 +24,11 @@ jobs:
         curl -LO https://github.com/labring/sealos/releases/download/v4.3.3/sealos_4.3.3_linux_amd64.tar.gz
         tar -xzvf sealos_4.3.3_linux_amd64.tar.gz
         chmod +x sealos
-        echo "$PWD/sealos" >> $GITHUB_PATH
-        ls /usr/bin
+        mv sealos  /usr/bin
+        #echo "$PWD/sealos" >> $GITHUB_PATH
         
     - name: Verify sealos installation
-      run: /home/runner/work/docker_image_pusher/docker_image_pusher/sealos version  # 或者任何其他命令来验证sealos是否正确安装
+      run: sealos version  # 或者任何其他命令来验证sealos是否正确安装
       
     - name: Check out code
       uses: actions/checkout@v2
