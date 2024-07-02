@@ -26,6 +26,7 @@ jobs:
         chmod +x sealos
         echo "$PWD/sealos" >> $GITHUB_PATH
         cat  $GITHUB_PATH
+        ls $PWD/sealos
 
     - name: Check out code
       uses: actions/checkout@v2
