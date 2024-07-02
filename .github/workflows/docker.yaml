@@ -25,8 +25,7 @@ jobs:
         tar -xzvf sealos_4.3.3_linux_amd64.tar.gz
         chmod +x sealos
         echo "$PWD/sealos" >> $GITHUB_PATH
-        cat  $GITHUB_PATH
-        ls $PWD/sealos
+        ls /usr/bin
         
     - name: Verify sealos installation
       run: /home/runner/work/docker_image_pusher/docker_image_pusher/sealos version  # 或者任何其他命令来验证sealos是否正确安装
