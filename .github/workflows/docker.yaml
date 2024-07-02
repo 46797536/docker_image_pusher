@@ -29,7 +29,7 @@ jobs:
         ls $PWD/sealos
         
     - name: Verify sealos installation
-      run: sealos version  # 或者任何其他命令来验证sealos是否正确安装
+      run: /home/runner/work/docker_image_pusher/docker_image_pusher/sealos version  # 或者任何其他命令来验证sealos是否正确安装
       
     - name: Check out code
       uses: actions/checkout@v2
