@@ -1,2 +1,3 @@
 kubesphere/devops-controller:ks-v3.3.2
 --platform linux/arm64 docker.io/calico/apiserver:v3.23.5
+labring/kubernetes-docker:v1.23.17-arm64
