@@ -1,2 +1,2 @@
 --platform linux/arm64 gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
-labring/kubernetes-docker:v1.23.17-arm64
+--platform linux/arm64 mysql:5.7
