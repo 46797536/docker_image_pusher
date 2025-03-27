@@ -1,2 +1,2 @@
 --platform linux/arm64 gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
---platform linux/arm64 mysql:5.7
+--platform linux/amd64 alpine
