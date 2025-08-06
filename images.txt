@@ -1,2 +1,3 @@
---platform linux/arm64 gcr.io/kubebuilder/kube-rbac-proxy:v0.13.1
+--platform linux/arm64 ghcr.io/trustin/manjaro-xrdp-gnome:latest
+--platform linux/arm64 m1k1o/neko:remmina:latest
 --platform linux/amd64 alpine
