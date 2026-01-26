@@ -1,3 +1,2 @@
 --platform linux/arm64 alpine
---platform linux/amd64 prom/blackbox-exporter:v0.28.0
-
+--platform linux/amd64 mysql:5.7
