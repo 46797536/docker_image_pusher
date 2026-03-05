@@ -1,2 +1,2 @@
 --platform linux/arm64 alpine
---platform linux/amd64 mysql:5.7
+--platform linux/amd64 grafana/grafana:12.4
