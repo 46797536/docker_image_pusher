@@ -1,4 +1,3 @@
 --platform linux/arm64 alpine
 --platform linux/amd64 docker.io/wagoodman/dive
---platform linux/amd64 flashcatcloud/nightingale:8.5.1
---platform linux/amd64 flashcatcloud/nightingale:9.1.1
+--platform linux/amd64 seafileltd/seafile:14.0.0
